@@ -1,0 +1,231 @@
+/* ==============================
+   TASK 1: BASIC PAGE STYLING
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5fff5;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* ==============================
+   TASK 2: HEADER AND FOOTER
+   ============================== */
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* ==============================
+   TASK 3: HORIZONTAL NAVIGATION
+   ============================== */
+
+nav {
+    background-color: #1b5e20;
+    padding: 12px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+/* ==============================
+   MAIN CONTENT
+   ============================== */
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    min-height: 500px;
+}
+
+h1, h2 {
+    color: #2e7d32;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* ==============================
+   TASK 4: CARD DESIGN
+   ============================== */
+
+.card {
+    background-color: white;
+    border: 2px solid #81c784;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+/* Forms */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* ==============================
+   TASK 5: LIST STYLING
+   ============================== */
+
+ol {
+    list-style-type: upper-roman;
+    padding-left: 30px;
+}
+
+ol li {
+    margin: 12px 0;
+    color: #444;
+}
+
+.product-name {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.product-description {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-description dt {
+    color: #1b5e20;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-description dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* ==============================
+   CATALOGUE CARDS
+   ============================== */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    width: 220px;
+    background-color: white;
+    border: 1px solid #81c784;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    color: #2e7d32;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* ==============================
+   TASK 6: CONSISTENT LAYOUT
+   ============================== */
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        font-size: 22px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+}
